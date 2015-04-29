@@ -1,5 +1,48 @@
 http://aaa-a1.blog.163.com/blog/static/247308089201539101531900/#
+1.  申请github账号 。 例如：名字：ss，邮箱：xxxx；
 
+2.  在git-scm.com上下载Git ；
+
+3.  下载完成后打开git Bash;
+
+4.  在 git bash中输入：
+
+     $ git config --global user.name"ss"。
+
+     $ git config --global user.email"xxxx"。
+
+      $mkdir     一个文件名  。
+
+     $git init
+
+5.   建立ssh key
+
+      再接着输入：
+
+      $ ssh-keygen    -C   "xxxx"  -t   rsa    
+
+      关闭它
+
+      之后 在用户主目录里找到.ssh目录，找到id_rsa.pub文件，
+
+      并打开id_rsa.pub文件，复制内容
+
+      登陆GitHub，打开右上角的settings，在出现页面的左边打开“SSH Keys”页面：
+
+      “Add SSH Key”，填上任意Title，在Key文本框里粘贴id_rsa.pub文件的内容 ，就设置好key了。
+
+6.   在github网站里new repository   写上任意名字、注释就行了。
+
+7.    再右击以git  bash格式打开要保存的内容文件  ，输入： 
+
+      $ git init  
+
+      $ git add    --all
+
+      $ git commit -m "任意"
+
+   $ git remote add origin https://github.com/1246251747/ggg.git
+   $  git push -u origin master
 
 http://www.cnblogs.com/
 
